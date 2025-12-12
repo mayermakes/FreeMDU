@@ -392,8 +392,8 @@ pub enum SpinSetting {
 pub enum ProgramPhase {
     /// Program has not started yet.
     Idle,
-    /// Program is starting.
-    Starting,
+    /// Program start scheduled with delay start function.
+    DelayedStart,
     /// First soak/pre-wash phase.
     SoakPreWash1,
     /// Second soak/pre-wash phase.
